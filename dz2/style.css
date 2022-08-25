@@ -1,0 +1,71 @@
+*{
+    margin:0;
+}
+.header{
+    padding:15px;
+}
+.header .header-container{
+    width:70%;
+    margin: auto;
+    display:table;
+    clear:both;
+}
+.header .header-logo{
+    float: left;
+    color: red;
+    text-transform: uppercase;
+}
+.header .header-title{
+    float: right;
+}
+.header .contact{
+    background: red;
+    color:white;
+    padding:10px  35px; 
+    border: transparent;
+}
+.header .Login{
+    padding:10px  35px;
+    background: transparent; 
+    border-color: transparent;
+}
+.header span{
+  color:grey;
+  text-transform: lowercase;
+  font-size: 14px;
+}
+.navbar {
+    background:rgb(27, 22, 22);
+    color:white;
+}
+.navbar .navbar-container{
+    width:70%;
+    margin: auto;
+    display:table;
+    clear:both;
+}
+.navbar .navbar-container-list ul{
+    list-style-type: none;
+    display: table;
+    clear:both;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding:0;
+}
+.navbar .navbar-container-list ul li{
+    float:left;
+    padding:25px 15px;
+}
+.navbar .navbar-container-list{
+    float:left;
+}
+.navbar-container-input{
+    float:right;
+    padding: 20px 35px;
+
+}
+.navbar-container-input input{
+        width: 250px;
+        height:  30px;
+}
