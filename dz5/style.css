@@ -1,0 +1,177 @@
+    *{
+        margin:0;
+        padding:0;
+    }
+    .header{
+        background:url(../dz5/img/leila-master/img/bg.png);
+        background-size: cover;
+        background-position: center center;
+    }
+    .header-user{
+        width:40%;
+        margin:auto;
+        padding: 20px 0;
+    }
+    .header-user-item{
+        background: white;
+        border-radius:10px;
+        margin:10px 0;
+        padding:20px;
+        position:relative;
+    }
+    .header .header-container{
+        width: 80%;
+        display: table;
+        margin:auto;
+        color:white;
+    }
+    .first{
+        left:-50px;
+    }
+    .second{
+        right:-50px;
+    }
+    .header .header-container .navbar-container .navbar-menu ul {
+        list-style-type: none;
+        float:right;
+    }
+    .header .header-container .navbar-container .navbar-menu ul li{
+        display: inline-block;
+        padding: 5px;
+    }
+    .header .header-container .logo{
+        float:left; 
+    }
+    .header-user  .man{
+        position:absolute;
+    }
+    .header-user-item.first img{
+        position: absolute;
+        left:-75px;
+        top:-25px;
+    }
+    .header-user-item.second img{
+        position: absolute;
+        left: 550px;
+        top:-23px;
+    }
+    .main-container{
+        width: 70%; 
+        margin:auto;
+        padding: 70px 0;
+    }
+    .main-content{
+             display: table;
+        clear:both;
+        margin:auto;
+    }  
+    .main-content .content-picture{
+        float:left;
+        width:55%;
+    }
+    .main-content .content-picture img{
+        width:100%;
+    }
+    .main-content .content-text{
+        float:right;
+        width:40%;
+        box-sizing:border-box;
+        padding-top: 50px;
+    }
+    .main-content .content-text h2{
+        line-height:1.7;
+        padding: 3px 0;
+        width:70%;
+    }
+    .line{
+        background-color:red;
+        width:30px;
+        border:0;
+        height:1px;
+    }
+    .content-text p{
+        line-height:1.5;
+        font-size: 15px;
+    }
+    .content-text a{
+        color:red;
+    }
+    .statik ul{
+    list-style-type: none;
+    }
+    .statik ul li{
+        display: inline-block;
+    }
+    .statik .vert{
+    height:30px;
+    margin: 0 10px;
+    }
+    .main-content .content-text.res{
+        float:left;
+    }
+    .main-content .content-picture.res{
+        float:right;
+    }
+    .button{
+        color:white;
+        background: red;
+        width:28%;
+        padding:0;
+        border-radius: 23px;
+        height:35;
+        line-height:30px;
+        margin-top: 8px;
+        border:0;
+    }
+    .main-content{
+        margin-top: 40px;
+    }
+    .information{
+        display: table;
+        clear:both;
+        margin:auto;
+    }
+    .information .pod{
+        margin-top: 10px;
+    }
+    .information .od{
+        margin-top: 10px; 
+    }
+    .information .information-picture img{
+        width:100%;
+        height:75%;
+    }
+    .information .zag{
+        text-align: center;
+    }
+    .information-table {
+        width:100%;
+        display: table;
+        clear:both;
+        float:right;
+    }
+    .inform{
+        width:33%;
+        display: inline-block;
+    }
+    .pages{
+        background-color: grey; 
+    }
+    .pages .pages-container{
+        width:70%;
+        margin:auto;
+        clear:both;
+        display:table;
+    }
+    .pages .pages-info{
+        float:left;
+        text-align: center;
+        width:45%;
+    }
+    .pages .pages-img{
+        float:right;
+        width:55%;
+    }
+    .pages .pages-img img{
+        width:100%;
+    }
