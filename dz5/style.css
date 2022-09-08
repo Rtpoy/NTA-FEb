@@ -155,23 +155,69 @@
         display: inline-block;
     }
     .pages{
-        background-color: grey; 
+        background-color: rgb(237, 212, 212); 
     }
     .pages .pages-container{
         width:70%;
-        margin:auto;
-        clear:both;
         display:table;
+        clear:both;
+        margin:auto;
     }
-    .pages .pages-info{
+    .pages .pages-container .pages-info .pages-text{
         float:left;
-        text-align: center;
-        width:45%;
+        width:40%;
+        margin-top: 70px;
     }
-    .pages .pages-img{
+    .pages .pages-container .pages-info .pages-img img{
+        width:100%;
+    }
+    .pages .pages-container .pages-info .pages-img{
         float:right;
         width:55%;
     }
-    .pages .pages-img img{
-        width:100%;
+    .pages .pages-container .pages-com{
+        margin-top: 10px;
+    }
+    .circle{
+        border-radius:50%;
+        height:50px;
+        width:50px;
+        background: grey;
+        float:left;
+    }
+    .circle .circle-text{
+        float:right;
+        padding-top: 5px;
+    }
+    .footer{
+        background-color: rgb(99, 93, 93);
+        
+    }
+    .footer .footer-container{
+        Width:70%;
+         display: table;   
+         clear: both;
+         margin: auto;
+    }
+    .footer .footer-container .footer-info{
+        width:33%;
+        display: inline-block;
+        text-align: center;
+       
+    }
+    .footer-info ul{
+        list-style-type: none;
+
+        
+    }
+    .footer-info ul li{
+         display: inline-block;
+    }
+    .footer .footer-container .footer-info:first-child{
+        width:33%;
+        display: inline-block;
+        text-align:left
+    }
+    .button .bo{
+        width: 16%;
     }
