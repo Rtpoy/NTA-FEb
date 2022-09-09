@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Oswald', sans-serif;
+}
+.container{
+    width:70%;
+    margin:auto;
+    display: table;
+    clear:both;
+}
+header{
+    padding: 15px;
+}
+.header span{
+    color: grey;
+    text-transform: lowercase;
+    font-size: 14px;
+}
+.navbar{
+    background-color: rgb(27, 22, 22);
+    color: white;
+}
+.header-logo{
+    float:left;
+    color: red;
+    text-transform: uppercase;
+}
+.header-user{
+    float:right;
+}
+.header-user .login{
+    padding: 10px 35px;
+    background: transparent;
+    border-color: transparent;
+}
+.header-user .cont{
+    background: red;
+    color: white;
+    padding: 10px 35px;
+    border: transparent;
+}
+.nav{
+    float:left;
+}
+.nav ul{
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+}
+.nav ul li{
+    float:left;
+    padding: 25px 15px;
+}
+.search{
+    float:right;
+    padding: 15px 35px;
+}
+.search input{
+    width: 250px;
+    height: 30px;
+}
+.content-title{
+    width:55%;
+     margin-top: 20px;
+}
+.content-description{
+    width:60%;
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.news-container{
+    width: 70%;
+    margin: auto;
+}
+.new-tab{
+    width: 16%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.new-tab-img{
+    height: 100px;
+}
+.new-tab-img img{
+    width: 100%;
+    height: 100%;
+}
+.content-list h2{
+    margin-top: 15px;   
+}
+.content-list ul{
+    padding: 10px 20px;
+}
+.news-container h4{
+    padding: 10px 20px;
+}
