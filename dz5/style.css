@@ -31,11 +31,11 @@
     .second{
         right:-50px;
     }
-    .header .header-container .navbar-container .navbar-menu ul {
+    .header .header-container .navbar-container  ul {
         list-style-type: none;
         float:right;
     }
-    .header .header-container .navbar-container .navbar-menu ul li{
+    .header .header-container .navbar-container ul li{
         display: inline-block;
         padding: 5px;
     }
@@ -52,7 +52,7 @@
     }
     .header-user-item.second img{
         position: absolute;
-        left: 550px;
+        right: -30px;
         top:-23px;
     }
     .main-container{
@@ -126,35 +126,34 @@
     .main-content{
         margin-top: 40px;
     }
-    .information{
-        display: table;
-        clear:both;
-        margin:auto;
-    }
-    .information .pod{
+     .pod{
         margin-top: 10px;
     }
-    .information .od{
+     .od{
         margin-top: 10px; 
         margin-bottom:10px;
     }
-    .information .information-picture img{
+     .information-picture img{
         width:100%;
         height:75%;
     }
-    .information .zag{
+    .zag{
         text-align: center;
     }
-    .information-table {
-        width:100%;
-        display: table;
+    .information-table{
+        display:table;
         clear:both;
-        float:right;
+        margin:auto;
+        width:100%;
     }
-    .inform{
+    .information-table .inform{
         width:33%;
         display: inline-block;
     }
+    .inform img{
+        float:left;
+        margin-right: 10px;
+    } 
     .pages{
         background-color: rgb(237, 212, 212); 
     }
@@ -164,15 +163,15 @@
         clear:both;
         margin:auto;
     }
-    .pages .pages-container .pages-info .pages-text{
+    .pages .pages-container  .pages-text{
         float:left;
         width:40%;
         margin-top: 70px;
     }
-    .pages .pages-container .pages-info .pages-img img{
+    .pages .pages-container .pages-img img{
         width:100%;
     }
-    .pages .pages-container .pages-info .pages-img{
+    .pages .pages-container  .pages-img{
         float:right;
         width:55%;
     }
