@@ -19,6 +19,12 @@
         padding:20px;
         position:relative;
     }
+    .header-user-item .first{
+         color:black !important;
+    }
+    .header-user-item .second{
+        color:black !important;
+    }
     .header .header-container{
         width: 80%;
         display: table;
