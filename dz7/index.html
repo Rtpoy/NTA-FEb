@@ -20,10 +20,10 @@
   <body>
     <div class="header">
         <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
               <img src="./img/Logo.png">
             </div>
-            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
                 <ul class="nav navbar-nav navbar-right">
                   <li><a href="#two" class="new-li">Вызвать курьера</a></li>
                   <li><a href="#two" class="new-li">Рассчитать стоимость</a></li>
@@ -50,7 +50,7 @@
       
     <div class="main">
       <div class="row">
-        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
           <h1>Компании, доверяющие нам свои грузы:</h1>
           <div class="img-block">
             <img src="img/sever.png">
@@ -77,7 +77,7 @@
             </div>
 -->
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
           <div class="price-block">
             <button type="button">Рассчитать стоимость</button>
             <button type="button">Вызвать курьера</button>
@@ -85,19 +85,19 @@
         </div>
       </div>
   </div>
+  <div class="container-fluid">
     <div class="container">
         <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <h1>БЛОК РАССЧЕТА СТОИМОСТИ</h1>
                 <h4>Если у Вас есть договор с Major Express воспользуйтесь личным кабинетом</h4>
       </div>
-        
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-            <p class="where">Откуда забрать</p>
-            
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <p class="where-w">Откуда забрать</p>
+        <form>
               <div class="info">
                 <div class="country"><p>Страна</p></div>
-                  <div class="selector">
+                  <div class="sel-set">
                 <select name="select" id="select">
                   <option value="1">Росия</option>
                   <option value="2">Росия</option>
@@ -106,16 +106,348 @@
                 </select>
                   </div>
               </div>
-            </div>
-              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-            <p class="where-w">Откуда забрать</p>
+              <div class="info">
+                <div class="country"><p>Страна</p></div>
+                  <div class="sel-set">
+                <select name="select" id="select">
+                  <option value="1">Росия</option>
+                  <option value="2">Росия</option>
+                  <option value="3">Росия</option>
+                  <option value="4">Росия</option>
+                </select>
+                  </div>
               </div>
-            
-            
+              </form>
+              <div class="date-block">
+                    <label for="date">Дата Отправки<img src="./img/calendar.png"><input id="date" type="date" value="2017-06-01"></label>
+              </div>
+
+
+            </div>
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <p class="where-w">Куда привезти</p>
+            <form>
+              <div class="info">
+                <div class="country"><p>Страна</p></div>
+                  <div class="sel-set">
+                <select name="select" id="select">
+                  <option value="1">Росия</option>
+                  <option value="2">Росия</option>
+                  <option value="3">Росия</option>
+                  <option value="4">Росия</option>
+                </select>
+
+                  </div>
+              </div>
+              <div class="info">
+                <div class="country"><p>Страна</p></div>
+                  <div class="sel-set">
+                <select name="select" id="select">
+                  <option value="1">Росия</option>
+                  <option value="2">Росия</option>
+                  <option value="3">Росия</option>
+                  <option value="4">Росия</option>
+                </select>
+                  </div>
+              </div>
+              </form>
+              </div>
+  </div>
+               
 </div>
+  </div>
+  <section id="third">
+    <div class="container">
+      <form>
+        <div class="select-wig">
+          <div class="wig-left">
+          <label for="select">Тип Груза</label>
+          </div>
+          <div class="wig-right">
+            <div class="sel-set-third">
+            <select name="select" id="sele">
+              <option value="1">Росия</option>
+              <option value="2">Росия</option>
+              <option value="3">Росия</option>
+              <option value="4">Росия</option>
+            </select>
+
+            </div>
+          </div>    
+        </div>
+        <div class="weight">
+          <label for="wight">Вес груза</label>
+          <input type="number" class="sel-set-min" name="weight" placeholder="0.0">
+        </div>
+        <div class="weight">
+          <label for="wight">Вес груза</label>
+          <input type="number" class="sel-set-min" name="weight" placeholder="0.0">
+          <input type="number" class="sel-set-min" name="weight" placeholder="0.0">
+          <input type="number" class="sel-set-min" name="weight" placeholder="0.0">
+        </div>
+      </form>
+         <div class="btn-upl">
+          <label><img src="./img/plus.png">Добавить документ<input type="file"></label>
+         </div>
     </div>
+  </section>
+<section id="content-container-4">
+<div class="container-fluid">
+        <div class="button-block">
+           <div class="button-left"><button type="button">Сделать заказ</button>
+          </div>
+            <div class="button-right">
+              <button type="button">Рассчитать</button>
+            </div>
+         </div>
+</div>
+  <div class="container">
+      <div class="row row-list">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="list">
+              <div class="list-image"><img src="./img/geo-location.png"></div>
+              <div class="list-name"><p>Отправить из офиса</p></div>
+              <div class="list-price"><p>Цена<span>1500грн</span></p></div>
+            </div>
+          </div>
+
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="list">
+              <div class="list-image"><img src="./img/geo-location.png"></div>
+              <div class="list-name"><p>Отправить из офиса</p></div>
+              <div class="list-price"><p>Цена<span>1500грн</span></p></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="list">
+              <div class="list-image"><img src="./img/geo-location.png"></div>
+              <div class="list-name"><p>Отправить из офиса</p></div>
+              <div class="list-price"><p>Цена<span>1500грн</span></p></div>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+          <div class="text-cart">
+            <a href="#" class="otd"><button>Отделение 1</button></a>
+            <a href="#" class="otd"><button>Отделение 2</button></a>
+            <p>вул. Шолом Алейхема, 35</p>
+            <p>ПН-ВТ 10:00-12:00</p>
+            <p><a href="tel:8(495)737-52-23">8(495)737-52-23</a></p>
+            <p>Дополнительная информация, текст,
+              Дополнительная информация, текст,
+              Дополнительная информация, текст,
+              Дополнительная информация</p>
+          </div>
+        </div>
+          <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+              <div class="map-block"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95938.40980969157!2d29.956632038183432!3d49.78089351827304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d3423e37227b9d%3A0x84e311f8582cc6e8!2z0JHRltC70LAg0KbQtdGA0LrQstCwLCDQmtC40ZfQstGB0YzQutCwINC-0LHQuy4sIDA5MTAw!5e0!3m2!1suk!2sua!4v1664456953492!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+          </div>
+    
+  </div>
+
+    <div class="ukin">
+  <ul class="ukaz">
+    <li><a>Введите адрес</a></li>
+    <li><a>Укажите контактние данние</a></li>
+    <li><a>Укажите детали</a></li>
+    </ul>
+    </div>
+  </div>
+</section>
+
+<section id="five">
+  <div class="container-fluid">
+    <div class="container">
+  <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <p class="where-w">Адрес отправителя</p>
+      <form>
+            <div class="info">
+              <div class="country"><p>Страна</p></div>
+                <div class="set-set">
+                  <input type="text">
+                </div>
+            </div>
+            <div class="info">
+              <div class="country"><p>Город</p></div>
+                <div class="set-set">
+                  <input type="text">
+                </div>
+            </div>
+            <div class="info">
+              <div class="country"><p>Дом</p></div>
+                <div class="set-set">
+                  <input type="text">
+                </div>
+            </div>
+            </form>
 
 
+          </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <p class="where-w">Адрес получателя</p>
+          <form>
+            <div class="info">
+              <div class="country"><p>Страна</p></div>
+                <div class="set-set">
+                  <input type="text">
+
+                </div>
+            </div>
+            <div class="info">
+              <div class="country"><p>Город</p></div>
+                <div class="set-set">
+                  <input type="text">
+                </div>
+            </div>
+            <div class="info">
+              <div class="country"><p>Дом</p></div>
+                <div class="set-set">
+                  <input type="text">
+                </div>
+            </div>
+            </form>
+            </div>
+    </div>
+    </div>
+</div>
+</section>
+<section id="six">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <p class="where-w">Отправитель</p>
+      <form>
+            <div class="info">
+              <div class="country"><p>Страна</p></div>
+                <div class="set-set">
+                  <input type="text">
+                </div>
+            </div>
+            <div class="info">
+              <div class="country"><p>Город</p></div>
+                <div class="set-set">
+                  <input type="text">
+                </div>
+            </div>
+            <div class="info">
+              <div class="country"><p>Дом</p></div>
+                <div class="set-set">
+                  <input type="text">
+                </div>
+            </div>
+            <div class="info">
+              <div class="country"><p>Дом</p></div>
+                <div class="set-set">
+                  <input type="text">
+                </div>
+            </div>
+            </form>
+
+
+          </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <p class="where-w">Получатель</p>
+          <form>
+            <div class="info">
+              <div class="country"><p>Страна</p></div>
+                <div class="set-set">
+                  <input type="text">
+
+                </div>
+            </div>
+            <div class="info">
+              <div class="country"><p>Город</p></div>
+                <div class="set-set">
+                  <input type="text">
+                </div>
+            </div>
+            <div class="info">
+              <div class="country"><p>Дом</p></div>
+                <div class="set-set">
+                  <input type="text">
+                </div>
+            </div>
+            <div class="info">
+              <div class="country"><p>Дом</p></div>
+                <div class="set-set">
+                  <input type="text">
+                </div>
+            </div>
+            </form>
+            </div>
+    </div>
+    </div>
+</div>
+  </div>
+</section>
+<section id="seven">
+  <div class="container">
+    <div class="row row-inf">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <div class="block-inf">
+            <p>Дата отправки</p>
+            <p><span>10 января 09:00 2022</span></p>
+          </div>
+          <div class="block-inf">
+            <p>Дата отправки</p>
+            <p><span>10 января 09:00 2022</span></p>
+          </div>
+          <div class="block-inf">
+            <p>Дата отправки</p>
+            <p><span>10 января 09:00 2022</span></p>
+          </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="block-inf">
+          <p>Дата отправки</p>
+          <p><span>10 января 09:00 2022</span></p>
+        </div>
+        <div class="block-inf">
+          <p>Дата отправки</p>
+          <p><span>10 января 09:00 2022</span></p>
+        </div>
+        <div class="block-inf">
+          <p>Дата отправки</p>
+          <p><span>10 января 09:00 2022</span></p>
+        </div>
+        <div class="block-inf">
+          <p>Дата отправки</p>
+          <p><label  class="check"><input type="checkbox">Я подтверждаю согласия с условиями</label></p>
+        </div>
+      </div>
+
+    </div>
+      <div class="dop">
+         <div class="dop-left">
+        <img src="./img/plus.png">
+         </div>
+         <div class="dop-right">
+          <p>Оформить услуги</p>
+         </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="dost">
+            <div class="one"><label><input type="checkbox"><span>Доставка в руки</span></label></div>
+            <div class="two"><p>Описание услуги текст</p><p>Описание услуги текст</p></div>
+            <div class="three"><p>Стоимость услуги</p><span>600грн</span></div>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="dost">
+            <div class="one"><label><input type="checkbox"><span>Доставка в руки</span></label></div>
+            <div class="two"><p>Описание услуги текст</p><p>Описание услуги текст</p></div>
+            <div class="three"><p>Стоимость услуги</p><span>600грн</span></div>
+          </div>
+        </div>
+      </div>
+
+
+  </div>
+</section>
 
 
 
