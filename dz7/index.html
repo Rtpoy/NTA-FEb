@@ -18,36 +18,55 @@
     <![endif]-->
   </head>
   <body>
-    <div class="header">
-        <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-              <img src="./img/Logo.png">
-            </div>
-            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
-                <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#two" class="new-li">Вызвать курьера</a></li>
-                  <li><a href="#two" class="new-li">Рассчитать стоимость</a></li>
-                  <li><a href="#" class="new-li">Отслеживание груза</a></li>
-                  <li><a href="#eight" class="new-li">Контакты</a></li>
-                  <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                      aria-expanded="false"><img src="img/location.png" class="location-img"><p>Выбор региона, город, телефон,
-                      название города, регион итд </p><span class="chevron"><i class="fas fa-chevron-down"></i></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Мурманск</a></li>
-                      <li><a href="#">Новосибирск</a></li>
-                      <li><a href="#">Екатеринбург</a></li>
-                      <li><a href="#">Самара</a></li>
-                      <li><a href="#">Челябинск</a></li>
-                      <li><a href="#">Омск</a></li>
-                    </ul>
-                  </li>
-                </ul>
-            </div>
-          </nav>
-            </div>
+    <nav class="navbar navbar-default mynav">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+              <div class="logo-img">
+              <img src="./img/logo.png">
+          </div>
         </div>
-      
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Франция</a></li>
+            <li><a href="#">Германия</a></li>
+            <li><a href="#">integration process</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><div class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Dropdown
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+            </li>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+
+
+
+
+
+
+
+
     <div class="main">
       <div class="row">
         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
@@ -62,7 +81,7 @@
             <img src="img/bisquite.png">
             <img src="img/ultra.png">
           </div>
-  <!-- <div class="video-block"> 
+   <div class="video-block"> 
               <button type="button" class="btn btn-video" data-toggle="modal" data-target=".bs-example-modal-lg"><img
                   src="img/small-play.png"></button>
               <p>Наше официальное видео</p>
@@ -75,7 +94,6 @@
                 </div>
               </div>
             </div>
--->
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
           <div class="price-block">
@@ -93,6 +111,7 @@
                 <h4>Если у Вас есть договор с Major Express воспользуйтесь личным кабинетом</h4>
       </div>
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <div class="form-block marg-right">
           <p class="where-w">Откуда забрать</p>
         <form>
               <div class="info">
@@ -121,10 +140,11 @@
               <div class="date-block">
                     <label for="date">Дата Отправки<img src="./img/calendar.png"><input id="date" type="date" value="2017-06-01"></label>
               </div>
-
+       </div>
 
             </div>
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="form-block marg-left">
             <p class="where-w">Куда привезти</p>
             <form>
               <div class="info">
@@ -152,6 +172,7 @@
               </div>
               </form>
               </div>
+              </div>
   </div>
                
 </div>
@@ -159,31 +180,26 @@
   <section id="third">
     <div class="container">
       <form>
-        <div class="select-wig">
-          <div class="wig-left">
-          <label for="select">Тип Груза</label>
-          </div>
-          <div class="wig-right">
-            <div class="sel-set-third">
-            <select name="select" id="sele">
-              <option value="1">Росия</option>
-              <option value="2">Росия</option>
-              <option value="3">Росия</option>
-              <option value="4">Росия</option>
-            </select>
-
+        <div class="inf">
+          <div class="country"><p>Страна</p></div>
+            <div class="sel-set">
+          <select name="select" id="select">
+            <option value="1">Росия</option>
+            <option value="2">Росия</option>
+            <option value="3">Росия</option>
+            <option value="4">Росия</option>
+          </select>
             </div>
-          </div>    
-        </div>
+        </div>  
         <div class="weight">
           <label for="wight">Вес груза</label>
           <input type="number" class="sel-set-min" name="weight" placeholder="0.0">
         </div>
         <div class="weight">
-          <label for="wight">Вес груза</label>
-          <input type="number" class="sel-set-min" name="weight" placeholder="0.0">
-          <input type="number" class="sel-set-min" name="weight" placeholder="0.0">
-          <input type="number" class="sel-set-min" name="weight" placeholder="0.0">
+          <label for="wight">Габарити</label>
+          <input type="number" class="sel-set-min" name="weight" placeholder="Длина">
+          <input type="number" class="sel-set-min" name="weight" placeholder="Ширина">
+          <input type="number" class="sel-set-min" name="weight" placeholder="Висота">
         </div>
       </form>
          <div class="btn-upl">
@@ -213,7 +229,7 @@
 
 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
             <div class="list">
-              <div class="list-image"><img src="./img/geo-location.png"></div>
+              <div class="list-image"><img src="./img/desktop.png"></div>
               <div class="list-name"><p>Отправить из офиса</p></div>
               <div class="list-price"><p>Цена<span>1500грн</span></p></div>
             </div>
@@ -221,7 +237,7 @@
 
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
             <div class="list">
-              <div class="list-image"><img src="./img/geo-location.png"></div>
+              <div class="list-image"><img src="./img/phone.png"></div>
               <div class="list-name"><p>Отправить из офиса</p></div>
               <div class="list-price"><p>Цена<span>1500грн</span></p></div>
             </div>
@@ -446,8 +462,82 @@
       </div>
 
 
+      <div class="order-but">
+        <button type="button">Визвать кур'єра</button>
+      </div>
+
+
+
   </div>
 </section>
+
+<section id="eight">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <div class="smart-block"><img src="./img/bell.png">
+          <p>Бесплатное уведомление о доставке</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <div class="smart-block"><img src="./img/shield.png">
+          <p>Бесплатное уведомление о доставке</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <div class="smart-block"><img src="./img/house2.png">
+          <p>Бесплатное уведомление о доставке</p>
+        </div>
+    </div>
+   </div>
+
+   <div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+      <div class="smart-block"><img src="./img/fedex.png">
+        <p>Бесплатное уведомление о доставке</p>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+      <div class="smart-block"><img src="./img/clock.png">
+        <p>Бесплатное уведомление о доставке</p>
+      </div>
+  </div>
+  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+</div>
+ </div>
+
+  </div>
+</section>
+<section id="nine">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+        <div class="contact-cont">
+         <a href="8(495)646-29-49"><img src="./img/phone-sm.png"><span>8(495)646-29-49</span></a>
+         <a href="8(495)646-29-49"><img src="./img/mail.png"><span>major@gmail.com</span></a>
+         <a href="8(495)646-29-49"><img src="./img/house.png"><span>ул. Добролюбова, д.2, стр. 1, Москва, 121059</span></a>
+        </div>
+    </div>
+    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+      <div class="frame">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79752.38541085426!2d30.385463158367457!3d50.48695395094809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef6dad51cc5%3A0x5e55cbe0d15f7789!2z0KPQvdGW0LLQtdGA0YHQuNGC0LXRgg!5e1!3m2!1suk!2sua!4v1664547298192!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+
+
+
+
+</div>
+</section>
+<footer class="footer">
+  <div class="block-foot">
+    <p><a href="m">Major express</p>
+      <p>2019</p>
+  </div>
+</footer>
 
 
 
