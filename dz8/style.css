@@ -15,9 +15,10 @@
     align-items: center;
 }
 .header-num{
-    color: #fff;
+    color: #fff !important;
     font-size: 24px;
     line-height: 28px;
+    text-decoration: none !important;
 }
 .header-burger{
     background-color: transparent;
@@ -155,42 +156,42 @@
     justify-content: center;
     align-items: center;
     margin-right: 30px;
+    text-decoration: none !important;
 }
 .middle-link:first-child{
     color: #130f02;
-    background: #e7b510;;
+    background: #e7b510;
     border-radius: 5px;
 }
 .pdf{
-    padding-right: 32px;
     position: relative;
 }
-.pdf::after{
-    content: '';
-    position: absolute;
-    background-image: url(./images/middle-pdf.svg);
-    width: 18px;
-    height: 20px;
-    right: 21px;
+.pdf:hover{
+    color:#000000;
+    background: #e7b510;  
+}
+.pdf:hover svg *{
+    fill:#000000;
+}
+.pdf svg{
+    margin-left: 10px;
 }
 .middle-link-view{
     color: #fff;
-    font-size: 14px;
-    line-height: 16px;
     padding-right: 76px;
     position: relative;
 }
-.middle-link-view::after{
-    content: '';
-    position: absolute;
-    background: url(./images/middle-view.svg);
-    width: 100px;
-    height: 102px;
-    right: 0;
-    top: -43px;
+.middle-link-view svg{
+       position: absolute;
+       top: -260%;
+       right: 0%;
 }
-.middle-link-view::after .middle-link-view::hover{
-    color:#FFC50E;
+.middle-link-view:hover{
+   color:#e7b510;
+   text-decoration: none;
+}
+.middle-link-view:hover svg *{
+    fill: #e7b510;
 }
 .mid-bottom{
     display: flex;
@@ -207,41 +208,15 @@
     position: relative;
     color:#fff;
 }
-.bottom-green::before{
-    content: '';
+.bottom-text svg{
     position: absolute;
-    background: url(./images/middle-trees.svg);
     width: 40px;
     height: 40px;
     left: 0;
     top: -13px;
 }
-.bottom-material::before{
-    content: '';
-    position: absolute;
-    background: url(./images/middle-house.svg);
-    width: 40px;
-    height: 40px;
-    left: 0;
-    top: -13px;
-}
-.bottom-infra::before{
-    content: '';
-    position: absolute;
-    background: url(./images/middle-shop.svg);
-    width: 40px;
-    height: 40px;
-    left: 0;
-    top: -13px;
-}
-.bottom-location::before{
-    content: '';
-    position: absolute;
-    background: url(./images/middle-map.svg);
-    width: 40px;
-    height: 40px;
-    left: 0;
-    top: -13px;
+.bottom-text:hover svg *{
+    fill: #77b82a;
 }
 .mid-bottom::after{
     content: '';
