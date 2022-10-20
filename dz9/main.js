@@ -4,14 +4,18 @@ $(document).ready(function(){
       responsive :true,
       auto: true,
     });
-  });
+  
 
-  $(document).ready(function(){
     $('.comments-slider').bxSlider({
       speed: 500,
       responsive :true,
       auto: true,
       controls:false,
     });
-  });
 
+    $('.logo-slider').bxSlider({
+      speed: 500,
+      responsive :true,
+      controls:false,
+    });
+});

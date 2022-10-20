@@ -1,7 +1,18 @@
 *{
     margin: 0;
 }
-
+@font-face {
+    font-family: "LeagueGothic"; 
+    src: url(./LeagueGothic/LeagueGothicRegular.ttf) format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+@font-face {
+     font-family: "Nunitosans";
+    src: url(./nunitosans/Nunitosansbold.ttf) format("truetype");
+    font-style: normal; 
+    font-weight: normal; 
+}
 .header{
     background: url(./img/bg.jpg);
     background-position: center;
@@ -25,19 +36,13 @@
 .navbar-text li{
     padding: 30px;
 }
-@font-face {
-    font-family: "LeagueGothic"; 
-    src: url("font/LeagueGothic/LeagueGothicRegular.ttf") format("truetype"); 
-    font-style: normal; 
-    font-weight: normal; 
-    } 
 .navbar-text  li a{
     font-size: 24px;
-	text-transform: uppercase;
-	color:#fff;
-	font-family:LeagueGothic;
-	text-decoration: none;
-    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "LeagueGothic";
+    text-decoration: none;
+    text-shadow: 1px 2px 1px rgb(0 0 0 / 40%);
 }
 .line{
     border-bottom:2px solid white;
@@ -53,6 +58,7 @@
 }
 .slide{
     display: flex;
+    position: relative;
 }
 .slide-text{
     display: flex;
@@ -64,20 +70,20 @@
 }   
 .slide h2{
     color: #edbfff;
-    font-family: LeagueGothic;
+    font-family: "LeagueGothic";
     font-size: 36px;
     text-shadow: 1px 2px 1px rgb(0 0 0 / 40%);
     text-transform: uppercase;
 }
 .slide h4{
     color: #fff;
-    font-family: LeagueGothic;
+    font-family: "LeagueGothic";
     font-size: 56px;
     text-shadow: 1px 2px 1px rgb(0 0 0 / 40%);
 }
 .slide p{
     color: #fff;
-    font-family: Nunitosans;
+    font-family: "Nunitosans";
     font-size: 18px;
     text-shadow: 1px 2px 1px rgb(0 0 0 / 40%);
     line-height: 1.2;
@@ -87,6 +93,43 @@
     padding: 0 60px;
     margin-left: auto;
     
+}
+.slide-text h2{
+    color: #edbfff;
+    font-family: "LeagueGothic";
+    font-size: 36px;
+    text-shadow: 1px 2px 1px rgb(0 0 0 / 40%);
+    text-transform: uppercase;
+}
+.slide-text p{
+    color: #fff;
+    font-family: "Nunitosans";
+    font-size: 18px;
+    text-shadow: 1px 2px 1px rgb(0 0 0 / 40%);
+    line-height: 1.2;
+}
+.comments-slider .slide{
+    padding: 30px;
+}
+.slide-text-com h2{
+    font-family: "LeagueGothic";
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #454545;
+}
+.slide-text-com p{
+    font-family: "Nunitosans";
+    font-size: 18px;
+    line-height: 1.4;
+    color: #454545;
+    padding-top: 10px;
+    text-shadow: none;
+}
+.slide-image-com{
+    position: absolute;
+    left: 5px;
+    top: 36px;
+    z-index: 2;
 }
 .info-container{
     background: linear-gradient(to top,#35273c, #765283);
@@ -102,13 +145,13 @@
 }
 .content-block h2{
     color: #fff;
-    font-family: LeagueGothic;
+    font-family: "LeagueGothic";
     font-size: 36px;
     padding: 50px 50px 0 50px;
     text-transform: uppercase;
 }
 .content-block p{
-    font-family: Nunitosans;
+    font-family: "Nunitosans";
     font-size: 18px;
     line-height: 1.6;
     padding: 20px 50px 50px 50px;
@@ -116,7 +159,11 @@
 .content-block .read{
     text-align: end;
     padding: 0 100px 50px 50px;
-    
+    color: #fff;
+    font-family: "LeagueGothic";
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 .content-block i{   
     position: absolute;
@@ -127,32 +174,47 @@
 }
 .comments{
     background: #f9f9f9;
+    display: flex;
 }
 .comments-slide{
-    position: relative;
     margin:10px 50px;
 }
 .comments-foto{
     position: absolute;
     z-index: 1;
-    left: -3%;
-    top: 15%;
+    left: 5px;
+    top: 36px;
+}
+.comments-block .slide{
+    padding: 40px 60px;
+    max-width: 430px;
+    height: auto;
+    position: relative;
+}
+.comments-slider .slide-text{
+    background: white;
+    padding: 30px;
+    position: relative;
+}
+.comments-slider .slide-text::before{
+    content: '';
+    position: absolute;
+    right: 20px;
+    bottom: -20px;
+    border: 10px solid transparent;
+    border-top: 10px solid white;
+}
+.comments-slider .slide-image{
+    position: absolute;
+    left: 0;
+    top: 50px;
+    z-index: 2;
 }
 .comments-block{
     display: flex;
 }
-.back{
-    background: #fff;
-    min-width: 300px;
-    position: relative;
-    border-bottom: 1px solid #efefef;
-    border-right: 1px solid #efefef;
-}
-.back-text{
-    padding: 30px;
-}
-.back-text span{
-    color: #edbfff;
+.comments-block-left .bx-wrapper{
+    padding:0 35px;
 }
 .comments-block-left{
     width: 50%;
@@ -160,36 +222,132 @@
 .comments-block-right{
     width: 50%; 
 }
+.text-block-right{
+    padding: 60px;
+}
 .text-block-right ul{
     list-style-type: none;
 }
 .text-block-right h1{
     padding-left: 40px;
+    font-family: "LeagueGothic";
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #454545;
+}
+.text-block-right p{
+    font-family: "Nunitosans";
+    font-size: 18px;
+    line-height: 1.2;
 }
 .list-comment{
     display: flex;
     padding: 10px 0;
 }
+.list-comment img{
+    width: 49px;
+    height: 49px;
+}
 .bald{
     font-weight: bold;
+    font-family: "Nunitosans";
+    font-size: 18px;
+    line-height: 1.2;
 }
 .list-comment-text{
     padding-left:20px;
 }
-.back::before{
-    content: '';
-    position: absolute;
-    right: 20px;
-    bottom: -20px;
-    border: 10px solid transparent;
-    border-top: 10px solid #efefef;
-}
 .read-more-right{
     color: #424242;
-    font-family: LeagueGothic;
+    font-family: "LeagueGothic";
     font-size: 22px;
     text-transform: uppercase;
     float: right;
     padding: 0 100px 50px 50px;
     cursor: pointer;    
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 30px;
+}
+.logo-img{
+    padding: 30px;
+}
+.notation{
+    background: #ececec;
+}
+.notation-list{
+    display: flex;
+}
+.notation-box-big{
+    padding: 50px 30px;
+}
+.notation-box-big h2{
+    font-family: "LeagueGothic";
+    font-size: 66px;
+    text-transform: uppercase;
+    color: #454545;
+}
+.notation-box-big .copyright{
+    font-family: "Nunitosans";
+    font-size: 18px;
+    line-height: 1.4;
+    color: #454545;
+}
+.notation-box-big .notation-text{
+    font-family: "Nunitosans";
+    font-size: 18px;
+    line-height: 1.4;
+    color: #454545;
+}
+.notation-box{
+    padding: 50px 30px;
+}
+.notation-box h3{
+    font-family: "LeagueGothic";
+    font-size: 46px;
+    text-transform: uppercase;
+    color: #454545;
+} 
+.notation-box p{
+    font-family: "LeagueGothic";
+    text-transform: uppercase;
+    color: #454545; 
+}
+.footer{
+    background:  url(./img/bg-footer.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.footer-container{
+    display: flex;
+}
+.footer-menu ul{
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+}
+.footer-menu ul li{
+    padding: 30px;
+}
+.footer-menu ul li a{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "LeagueGothic";
+    text-decoration: none;
+    text-shadow: 1px 2px 1px rgb(0 0 0 / 40%);
+}
+.author{
+    margin-left: auto;
+    padding-top: 30px
+}
+.author a{
+    font-family: "Nunitosans";
+    font-size: 16px!important;
+    color: #fff!important;
+    text-shadow: 1px 2px 1px rgb(0 0 0 / 40%);
+    text-decoration: none;
 }
