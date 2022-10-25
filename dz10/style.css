@@ -1,0 +1,138 @@
+.header{
+    background: url(./images/header-bg3.png);
+}
+@font-face {
+    font-family: "ArticaPro-light"; 
+    src: url(./fonts/artica-pro/artica-pro/TTF/ArticaPro-Light.ttf) format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+@font-face {
+    font-family: "ArticaPro-Medium"; 
+    src: url(.//fonts/artica-pro/artica-pro/TTF/ArticaPro-Medium.ttf) format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+font-face {
+    font-family: "OpenSans-Medium"; 
+    src: url(.//fonts/opensans/OpenSans-Medium.ttf) format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+.header-button{
+    margin-top: 30px;
+    background:  #F0F0F0;
+    border-color: #F0F0F0;
+    color: black;
+    position: relative;
+    max-width:360px;
+    display: flex;
+}
+.header-button:hover p{
+    color: #F0F0F0;
+}
+.header-button:hover svg *{ 
+    fill: white;
+}
+.header-button:hover.header-button{
+    background:  #DCAD55;
+}
+.header-button svg{
+    margin:15px 20px;
+}
+.header-button p{
+    padding-top: 10px;
+    padding-left: 25px;
+    color: #B29257;
+    width:75%;
+    text-align: center;
+    line-height: 20.1px;
+}
+.header-list{
+    font-family: "ArticaPro-Medium";
+    font-size:18px;
+}
+.request{
+    background:linear-gradient(97.98deg, #DCAD55 26.48%, #A78B58 89.9%);
+    transform: skewY(-3.6deg);
+    height: 414px;
+    border-bottom:  8px solid white;
+    border-top:8px solid white;
+    position: relative;
+}
+.request .request-text h3{
+    font-family: 'ArticaPro-Medium';
+    line-height: 113.5%;
+    font-size: 40px;
+    color: #F0F0F0;
+}
+.request .request-text .black{
+    color: #101010 ;
+}
+.request .container{
+    transform: skewY(3.6deg);
+}
+.request-info{
+    display: flex;
+    flex-direction: column;
+}
+.request-info input{
+    width: 300px;
+    height: 55px;
+} 
+.request-info button{
+    width: 300px;
+    height: 55px;
+    background: #101010;
+    color: #F0F0F0;
+    border: 3px solid white;
+}
+.request-info input:nth-child(1)::placeholder{
+    background : url('./images/Vector.png') no-repeat  20px;
+    padding-left: 60px;
+}
+.request-info input:nth-child(2)::placeholder{
+    background : url('./images/Group.png') no-repeat  20px;
+    padding-left: 60px;
+}
+.info{
+    background: #101010;
+}
+.info-block{
+    display: flex;
+}
+.info-text {
+    position: relative;
+}
+.info-text h4{
+    font-family: 'ArticaPro-Bold';
+    font-size: 50px;
+    line-height: 59px;
+    text-transform: uppercase;
+    color:#DCAD55;
+    margin-bottom: 40px;
+}
+.info-text p{ 
+    font-family: 'OpenSans-Medium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.line{
+    position: absolute;
+    width: 500px;
+    height: 5px;    
+    top: 25px;
+    right: 30px;
+    background: #FFFFFF;
+}
+.request-line{
+    position: absolute;
+    width: 200px;
+    height: 5px;    
+    background: #FFFFFF;
+    transform:  skewY(3.6deg);
+    top: 100px;
+}
