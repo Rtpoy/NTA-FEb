@@ -136,3 +136,238 @@ font-face {
     transform:  skewY(3.6deg);
     top: 100px;
 }
+.media{
+    color: #F0F0F0;
+    display: none;
+    font-size: 14px;
+}
+.media-school{
+    display: none;
+}
+.school-box{
+    display: flex;
+}
+.school-text{
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+}
+.school-img{
+    display: flex;
+}
+.school-img img{
+    width: 130%;
+}
+.school-text h4{
+    padding-bottom: 20px;
+}
+.school-text h1{
+    padding-bottom: 20px;
+}
+.inputs-block{
+    display: none;
+}
+.inputs-block .request-text{
+    text-align: center;
+}
+.inputs-block .request-text h3{
+    font-size:30px;
+}
+.adapt{
+    display: none;
+}
+.adapt .line{
+    position: absolute;
+    width: 200px;
+    height: 5px;    
+    top: 25px;
+    right: 0px;
+    background: #FFFFFF;
+}
+.adapt .info-text p{
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+.things{
+    background: #101010;
+}
+.things-box{
+    color: #FFFFFF;
+    position: relative;
+}
+.things-box h2{
+    text-align: center;
+    font-family: 'ArticaPro-Bold';
+    line-height: 59px;
+    text-transform: uppercase;
+    color: #DCAD55;
+    margin-bottom: 40px;
+}
+.things-box .left{
+    left:0px;
+    width: 300px;
+}
+.things-box .right{
+    width:300px;
+    right: 0px;
+}
+.thing{
+    display:flex;
+    flex-direction: column;
+    max-width: 300px;
+    min-height: 115px;
+    max-height: fit-content;
+}
+.thing a{
+    display: flex;
+    border: 3px solid #DCAD55;  
+    margin:10px;
+    align-items: center;
+}
+.thing  a p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+.thing  a img{
+    padding: 20px;
+}
+.things-adapt{
+    display: none;
+}
+.things-adapt h2{
+    text-align: left;
+}
+.things-adapt .line{
+    width:150px;
+    right:0px;
+}
+.courses{
+    background: #010000;
+    transform:skewY(1deg);
+}
+.courses h2{
+    text-align: center;
+    font-family: 'ArticaPro-Bold';
+    line-height: 59px;
+    text-transform: uppercase;
+    color: #DCAD55;
+    margin-bottom: 40px;
+}
+.main{
+    background: #101010;
+}
+.courses-zag{
+    transform:skewY(-1deg);  
+    position: relative;
+}
+.courses-zag .left{
+    left:0;
+}
+.courses-zag .right{
+    right:0;
+}
+.zag-buttons{
+    display: flex;
+}
+.zag-buttons button{
+    text-align: center;
+    background: #DCAD55;
+    border: 4px solid #DCAD55;
+    box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.25);
+    margin: 10px;
+}
+.zag-buttons button:first-child{
+    box-shadow: 0 0 15px 5px rgb(220, 173, 85);
+}
+.zag-buttons button:nth-child(2){
+    background: #101010;
+    color: #FFFFFF;
+}
+.zag-buttons button:nth-child(2) img{
+    padding-left:10px;
+}
+.boy-box{
+    display: flex;
+    color: #F0F0F0;
+    margin-top:20px;
+}
+.boy-box p{
+    text-align: center;
+    margin-bottom: 2px;
+}
+.lessons{
+    display:flex;
+}
+.lesson-box{
+    border: 4px solid #F5F5F5;
+}
+.lesson-text{ 
+    background:#1B1B1B;
+    color: #F5F5F5;
+}
+.lesson-title{
+    background: #F0F0F0;
+    padding: 15px 10px;
+    font-size:22px;
+    text-align: center;
+}
+.price-first{
+    padding:20px 20px;
+}
+.price-second{
+    padding-left: 10px;
+}
+.price-first p{
+    padding-left: 20px;
+}
+.price-second p{
+    padding-left: 20px;
+}
+.lesson-button{
+    padding: 10px 10px;
+    background:#1B1B1B; ;
+}
+.lesson-button button{
+   background:#DCAD55;
+   border: 3px solid #FFFFFF;
+   width:150px;
+}
+.lesson-box{
+    margin-left: 20px;
+    height: fit-content;
+    width:264px;
+}
+.small-title{
+    width: 75%;
+    margin: auto;
+    text-align: center;
+}
+.teacher{
+    background: #010000;
+    transform:skewY(1deg);
+}
+.teacher h2{
+    text-align: center;
+    font-family: 'ArticaPro-Bold';
+    line-height: 59px;
+    text-transform: uppercase;
+    color: #DCAD55;
+    margin-bottom: 40px;
+}
+.teacher-container{
+    transform: skewY(-1deg);
+    position: relative;
+}
+.teacher-container .left{
+    left: 0 !important;
+    
+}
+.adapt .courses-zag button{
+        text-align: center;
+        background: #DCAD55;
+        border: 4px solid #DCAD55;
+        box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.25);
+        margin: 10px;
+}

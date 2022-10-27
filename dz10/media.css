@@ -1,0 +1,33 @@
+@media (max-width: 425px) {
+
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .media{
+        display: block;
+    }
+    .media-school{
+        display: block;
+    }
+    .school{
+        display: none;
+    }
+    .valid{
+        display: none;
+    }
+    .inputs-block{
+        display: block;
+    }
+    .default{
+        display: none;
+    }
+    .adapt{
+        display: block;
+    }
+    .things-def{
+        display: none;
+    }
+    .things-adapt{
+        display: block;
+    }
+}
