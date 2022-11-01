@@ -30,4 +30,50 @@
     .things-adapt{
         display: block;
     }
-}
+    .predmets-price{
+        width: fit-content;
+        margin-bottom: 30px;
+    }
+    .predmet-thing{
+        flex-direction: column;
+    }
+    .predmet-title h3::before {
+        content: url(./images/abc.png);
+        position: absolute;
+        top: -91px;
+        left: 131px
+    }
+    .predmet-title h3::after{
+        width: 150px;
+        height: 2px;
+        background: #FFFFFF;
+        position: absolute;
+        top: 17px;
+        right: 0;
+    }
+    .predmets .predmet-box:nth-child(2) h3::before {
+        content: url(./images/math.png) !important;
+        position: absolute;
+        top: -91px;
+        left: 131px;
+    }
+    .predmets .predmet-box:nth-child(3) h3::before {
+        content: url(./images/eagle.png) !important;
+        position: absolute;
+        top: -91px;
+        left: 131px;
+    }
+    .viber button{
+        position: absolute;
+        bottom: -40px;
+        left: -151px;
+        width: 303px;
+        background: purple;
+        color: #E1E1E1;
+    }
+    .links-box{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+ }
