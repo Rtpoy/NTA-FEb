@@ -153,20 +153,19 @@
     .links-box{
         flex-direction: column;
         align-items: center;
+        padding: 40px 100px 40px 50px;
     }
     .viber{
         position: absolute;
-    bottom: 0px;
-    left: 77px;
+    bottom: 24px;
     }
     .viber button{
-      width: 300px;  
+       width: 345px;
+       left: -152px;
     }
     .or{
         width: 290px;
-    }
-    .footer-back{
-        transform: skewY(-3.4deg);
+        padding-left: 30px;
     }
     .footer-numbers-container {
         margin-left: 0px;
@@ -188,6 +187,9 @@
     }
     .bx-wrapper .bx-prev {
         left: 32%;
+    }
+    .predmets{
+        position: relative;
     }
 }
 
@@ -259,7 +261,7 @@
         position: absolute;
         bottom: -40px;
         left: -151px;
-        width: 303px;
+        width: 345px;
         background: purple;
         color: #E1E1E1;
     }

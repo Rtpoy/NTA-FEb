@@ -1,3 +1,6 @@
+.body{
+    background: #010000 !important;
+}
 .header{
     background: url(./images/header-bg3.png);
 }
@@ -8,20 +11,50 @@
     font-weight: normal; 
 } 
 @font-face {
+    font-family: "ArticaPro"; 
+    src: url(./fonts/artica-pro/artica-pro/TTF/ArticaPro.ttf) format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+@font-face {
+    font-family: "ArticaPro-Bold"; 
+    src: url(./fonts/artica-pro/artica-pro/TTF/ArticaPro-Bold.ttf) format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+@font-face {
+    font-family: "ArticaPro-Black"; 
+    src: url(./fonts/artica-pro/artica-pro/TTF/ArticaPro-Black.ttf) format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+@font-face {
     font-family: "ArticaPro-Medium"; 
-    src: url(.//fonts/artica-pro/artica-pro/TTF/ArticaPro-Medium.ttf) format("truetype"); 
+    src: url(./fonts/artica-pro/artica-pro/TTF/ArticaPro-Medium.ttf) format("truetype"); 
     font-style: normal; 
     font-weight: normal; 
 } 
-font-face {
+@font-face {
     font-family: "OpenSans-Medium"; 
-    src: url(.//fonts/opensans/OpenSans-Medium.ttf) format("truetype"); 
+    src: url(./fonts/opensans/OpenSans-Medium.ttf) format("truetype"); 
     font-style: normal; 
     font-weight: normal; 
 } 
-font-face {
+@font-face {
     font-family: "OpenSans-Regular"; 
-    src: url(.//fonts/opensans/OpenSans-Regular.ttf) format("truetype"); 
+    src: url(./fonts/opensans/OpenSans-Regular.ttf) format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+@font-face {
+    font-family: "OpenSans-Bold"; 
+    src: url(./fonts/opensans/OpenSans-Bold.ttf) format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+@font-face {
+    font-family: "OpenSans-Light"; 
+    src: url(./fonts/opensans/OpenSans-Light.ttf) format("truetype"); 
     font-style: normal; 
     font-weight: normal; 
 } 
@@ -34,6 +67,7 @@ font-face {
     max-width:360px;
     display: flex;
     cursor: pointer;
+    font-family: "OpenSans-Bold";
 }
 .mobile-media{
     display: none;
@@ -89,6 +123,8 @@ font-face {
 .request-info input{
     width: 300px;
     height: 55px;
+    outline: none;
+    padding-left: 20px;
 } 
 .request-info button{
     width: 300px;
@@ -113,6 +149,7 @@ font-face {
 }
 .info-text {
     position: relative;
+    font-family: "OpenSans-Light";
 }
 .info-text h4{
     font-family: 'ArticaPro-Bold';
@@ -129,6 +166,9 @@ font-face {
     font-size: 22px;
     line-height: 30px;
     color: #FFFFFF;
+}
+.info-block .line{
+    right: 0px;
 }
 .line{
     position: absolute;
@@ -168,11 +208,25 @@ font-face {
 .school-img{
     display: flex;
 }
+.school img{
+    position: relative;
+    bottom:-65px;
+}
 .school-img img{
     width: 130%;
 }
 .school-text h4{
     padding-bottom: 20px;
+}
+.school h4{
+  font-family: "ArticaPro";  
+}
+.school h2{
+    font-family:"ArticaPro-Medium" ;
+}
+.school ul li{
+    font-family: "ArticaPro";
+    font-size: 1.75rem;
 }
 .school-text h1{
     padding-bottom: 20px;
@@ -427,13 +481,16 @@ font-face {
     padding-left: 30px;
     padding-top: 20px;
 }
+.teacher-list p{
+    font-family: "OpenSans";
+}
 .teacher-list h6{
-    font-family: "OpenSans-Medium";
+    font-family: "OpenSans-Bold";
     font-size: 25px;
     font-weight: bold;
 }
 .teacher-list span{
-    font-family: "OpenSans-Medium";
+    font-family: "OpenSans-Bold";
     font-size: 16px;
     font-weight: bold;
 }
@@ -552,9 +609,8 @@ font-face {
 }
 .action-block-text h3{
     text-align: end;
-    font-family: "ArticaPro-Medium"; 
+    font-family: "ArticaPro-Black"; 
 }
-
 .default .action-block-text p{
     text-align: end;
     font-family: "OpenSans-Medium";
@@ -567,9 +623,9 @@ font-face {
     z-index: 1;
     left: 0px;
 }
-.action-block-text h4{
+.action-block-text h3{
     text-align: end;
-    font-family: "ArticaPro-Medium"; 
+    font-family: "ArticaPro-Black"; 
     padding-bottom: 30px;
 } 
 .adapt .action-block{
@@ -624,18 +680,16 @@ font-face {
     left: 37px;
 }
 .predmets{
-    transform:skewY(3.4deg);
     background: #010000;
     padding-top: 80px;
-}
-.predmets-container{
-    transform:skewY(-3.4deg);
 }
 .predmet-title{
     position: relative;
     color: #DCAD55;
     text-align: center;
     padding-bottom: 30px;
+    font-family:"ArticaPro-Bold";
+    text-transform: uppercase;
 }
 .predmet-title h3::before{
     content:url(./images/abc.png);
@@ -657,7 +711,7 @@ font-face {
 }
 .predmet-title h3::after{
     content: "";
-    width: 604px;
+    width: 600px;
     height: 2px;
     background: #FFFFFF;
     position: absolute;
@@ -705,7 +759,6 @@ font-face {
     padding-left: 3px;
 }
 .recomendeds{
-    transform:skewY(-3.4deg);
     padding: 30px;
 }
 .recomend-box{
@@ -746,9 +799,6 @@ font-face {
     width:360px;
     box-shadow: 0px 6px 22px rgba(255, 255, 255, 0.36);
 }
-.links{
-    transform:skewY(-3.4deg); 
-}
 .links-title h3{
     text-align: center;
     font-family: 'ArticaPro-Medium';
@@ -762,7 +812,7 @@ font-face {
     width: 600px;
 }
 .links-box{
-    padding: 40px;
+    padding: 40px 100px 41px 0px;
 }
 .links-input{
     width: 300px;
@@ -786,14 +836,19 @@ font-face {
     position: absolute;
     bottom: 0;
     left: -15px;
-    width: 250px;
-    background: purple;
-    color: #E1E1E1;
+    width: 345px;
+    height: 45px;
+    background: #784F99;
+    box-shadow: 0px 0px 15px rgb(120 79 153);
+    color: #ffffff;
 }
 .links-input button{
+    width: 345px;
+    height: 45px;
+    color: #000000;
     background: #DCAD55;
-    box-shadow: 0px 6px 22px rgba(255, 255, 255, 0.36);
-    border: none;
+    box-shadow: 0px 0px 15px rgb(220 173 85);
+    font-size: 16px;
 }
 .links-input input:nth-child(1)::placeholder{
     background : url('./images/Vector.png') no-repeat  20px;
@@ -807,9 +862,16 @@ font-face {
     background : url('./images/oliv.png') no-repeat  20px;
     padding-left: 60px;
 }
+.links-input input{
+    width: 345px;
+    height: 55px;
+    padding: 0 20px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 0;
+}
 .footer{
     background: #1B1B1B;
-    transform: skewY(3.4deg);
 }
 .footer-title h3{
     text-align: center;
@@ -879,13 +941,7 @@ font-face {
 }
 .adapt .footer-title{
     padding-top: 30px;
-}
-.default .footer-back{
-    transform: skewY(-3.4deg);
-}
-.adapt .footer-back{
-    transform: skewY(-3.4deg);
-}
+}   
 .adapt .number{
     background: #DCAD55;
 }
