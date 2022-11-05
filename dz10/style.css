@@ -33,6 +33,10 @@ font-face {
     position: relative;
     max-width:360px;
     display: flex;
+    cursor: pointer;
+}
+.mobile-media{
+    display: none;
 }
 .header-button:hover p{
     color: #F0F0F0;
@@ -147,11 +151,14 @@ font-face {
     display: none;
     font-size: 14px;
 }
-.media-school{
-    display: none;
-}
 .school-box{
     display: flex;
+}
+.mobile{
+    display: none;
+}
+.media-school{
+    display: none;
 }
 .school-text{
     display: flex;
@@ -169,6 +176,7 @@ font-face {
 }
 .school-text h1{
     padding-bottom: 20px;
+    font-family: "ArticaPro-Medium"; 
 }
 .inputs-block{
     display: none;
@@ -586,7 +594,8 @@ font-face {
     bottom: -33px;
     position: absolute;
     z-index: 1;
-    right: -34px;
+    right: 0px;
+    width: 400px;
 }
 .adapt .title-text{
     padding: 30px 40px;
@@ -799,7 +808,8 @@ font-face {
     padding-left: 60px;
 }
 .footer{
-    background: #010000;
+    background: #1B1B1B;
+    transform: skewY(3.4deg);
 }
 .footer-title h3{
     text-align: center;
@@ -808,13 +818,77 @@ font-face {
     text-transform: uppercase;
     color: #DCAD55;
 }
+.footer-links button{
+    margin-bottom: 10px;
+    width: 268px;
+    background: #DCAD55;
+    box-shadow: 0px 6px 22px rgba(255, 255, 255, 0.36);
+}
+.footer-button{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
 .footer-container{
     display: flex;
     justify-content: center;
+}
+.footer-text{
+    color: #FFFFFF;
 }
 .number{
     background: #FFFFFF;
     width: 44px;
     height:44px;
     border-radius: 50%;
+    position: relative;
+}
+.number img{
+    position: absolute;
+    bottom:11px;
+    left: 10px;
+}
+.number img:nth-child(2){
+    left:8px;
+}
+.footer-numbers{
+    padding-bottom: 30px;
+}
+.footer-numbers-container{
+    margin-left: 50px;
+}
+.number-text{
+    color: #FFFFFF;
+    padding-left: 10px;
+}
+.adapt .footer-container-button{
+   padding-bottom: 40px; 
+}
+.adapt .footer-container-button button{  
+    color: #101010;
+    width: 345px;
+    background: #DCAD55;
+    border: 3px solid #FFFFFF;
+    box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.1);
+    height: 55px;
+}
+.adapt .footer-numbers-container{
+    margin-left: 0px;
+}
+.adapt .footer-links{
+    padding: 30px;
+}
+.adapt .footer-title{
+    padding-top: 30px;
+}
+.default .footer-back{
+    transform: skewY(-3.4deg);
+}
+.adapt .footer-back{
+    transform: skewY(-3.4deg);
+}
+.adapt .number{
+    background: #DCAD55;
+}
+.adapt .links{
+    padding: 30px;
 }

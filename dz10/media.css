@@ -1,10 +1,202 @@
-@media (max-width: 425px) {
-
+@media (max-width: 426px) {
+    .mobile-media{
+        display: block !important;
+    }
+    .school{
+        display: none !important;
+    }
+    .media-school{
+        display: none !important;
+    }
+    .school-img{
+        width: 100%;
+    }
+    .school-img img{
+        width:100%;
+    }
+    .school-text h1{
+        padding: 0px;
+    }
+    .school-text{
+        text-align: center;
+    }
+    .school-text h4{
+        padding-bottom: 0px;
+    }
+    .pos-but{
+        position: relative;
+    }
+    .header-button{
+        position: absolute;
+        bottom: 43px;
+        left: 23px;
+    }
+    .request-text{
+        text-align: center;
+    }    
+    .request-line{
+        display: none;
+    }
+    .default{
+        display: none;
+    }
+    .info-block{
+        padding-bottom: 100px;
+    }
+    .info-text p{
+        font-size: 24px;
+    }
+    .things-adapt{
+        display: none;
+    }
+    .things-def{
+        display: none;
+    }
+    .thing a{
+        border: none;
+    }
+    .zag-buttons{
+        flex-direction: column;
+        width: 200px;
+        margin-left: 40px;
+    }
+    .lessons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .lesson-box{
+        margin-left: 0px;
+        margin-bottom: 30px;
+    }
+    .option{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .option img{
+        width: 80px;
+    }
+    .option:nth-child(1){
+        margin-top: 40px;
+    }
+    .action-cont{
+        transform: skewY(-3.6deg);
+    }
+    .action{
+        height: 900px;
+        position: relative;
+        z-index: 1;
+    }
+    .action-block{
+        position: absolute;
+        width: 299px;
+        height:444px;
+        top: 293px;
+        left: 47px;
+    }
+    .action-block::before{
+        width:222px;
+        left: 25px;
+       
+    }
+    .action-block::after {
+        width:210px;
+        left: 34px;
+    }
+    .action-block-img img{
+        position: absolute;
+        right: 0;
+        bottom: -660px;
+    }
+    .action-text .title-text h3{
+        padding: 30px 30px 0px 30px;
+    }
+    .action-text .title-text h4{
+        padding: 0px 30px 30px 30px;
+    }
+    .action-text p{
+        padding: 30px;
+        font-size: 20px;
+    }
+    .predmets{
+        padding-top: 190px;
+    }
+    .predmet-title h3::after{
+        content: none;
+    }
+    .predmet-title h3::before {
+        left:12px;
+    }
+    .predmets .predmet-box:nth-child(2) h3::before {
+        left:12px;
+    }
+    .predmets .predmet-box:nth-child(3) h3::before {
+        left:12px;
+    }
+    .predmet-thing{
+        flex-direction: column;
+    }
+    .predmets-price{
+        margin-bottom: 20px;
+    }
+    .links{
+        display: block;
+    }
+    .predmet-box{
+        padding-bottom: 100px;
+    }
+    .links-input {
+        width: 300px;
+    }
+    .links-box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .viber{
+        position: absolute;
+    bottom: 0px;
+    left: 77px;
+    }
+    .viber button{
+      width: 300px;  
+    }
+    .or{
+        width: 290px;
+    }
+    .footer-back{
+        transform: skewY(-3.4deg);
+    }
+    .footer-numbers-container {
+        margin-left: 0px;
+    }
+    .number{
+        background: #DCAD55;
+    }
+    .links-title p {
+        width: fit-content;
+    }
+    .footer-links{
+        padding-bottom: 30px;
+    }
+    .predmets{
+        padding-bottom: 40px;
+    }
+    .bx-wrapper .bx-next{
+        right: 35%;
+    }
+    .bx-wrapper .bx-prev {
+        left: 32%;
+    }
 }
 
-@media (min-width: 426px) and (max-width: 768px) {
+@media (min-width: 427px) and (max-width: 768px) {
     .media{
         display: block;
+    }
+    .mobile{
+        display: none;
     }
     .media-school{
         display: block;
@@ -75,5 +267,11 @@
         flex-direction: column;
         align-items: center;
         padding-bottom: 50px;
+    }
+    .bx-wrapper .bx-next {
+        right: 44%;
+    }
+    .bx-wrapper .bx-prev {
+        left: 42%;
     }
  }
