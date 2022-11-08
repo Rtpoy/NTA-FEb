@@ -336,25 +336,42 @@
 .courses-zag .right{
     right:0;
 }
-.zag-buttons{
+.tabs-nav{
     display: flex;
 }
-.zag-buttons button{
+.tabs-nav .tab{
     text-align: center;
-    background: #DCAD55;
+    background: #101010;
+    color: #FFFFFF;
     border: 4px solid #DCAD55;
     box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.25);
     margin: 10px;
 }
-.zag-buttons button:first-child{
-    box-shadow: 0 0 15px 5px rgb(220, 173, 85);
+.tabs-nav a{
+    text-decoration: none; 
+    padding: 5px 20px 5px 20px;
 }
-.zag-buttons button:nth-child(2){
-    background: #101010;
-    color: #FFFFFF;
-}
-.zag-buttons button:nth-child(2) img{
+.tabs-nav .tab:nth-child(2) img{
     padding-left:10px;
+}
+.tab-pane{
+    display: none;
+    padding-bottom: 30px;
+}
+.tab-pane.active{
+    display: flex;
+}
+.tab:first-child{
+    background: #DCAD55;;
+    box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.25);
+    color: #000000;
+    border: 4px solid #DCAD55;
+}
+.tab:nth-child(2){
+    color:#DCAD55;
+}
+.tab:nth-child(3){
+    color:#DCAD55;
 }
 .boy-box{
     display: flex;
@@ -364,9 +381,6 @@
 .boy-box p{
     text-align: center;
     margin-bottom: 2px;
-}
-.lessons{
-    display:flex;
 }
 .lesson-box{
     border: 4px solid #F5F5F5;
@@ -948,3 +962,10 @@
 .adapt .links{
     padding: 30px;
 }
+
+
+
+
+
+
+
