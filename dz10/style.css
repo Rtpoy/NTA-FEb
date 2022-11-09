@@ -322,6 +322,10 @@
     text-transform: uppercase;
     color: #DCAD55;
     margin-bottom: 40px;
+    padding-top: 40px;
+}
+.courses-zag .line{
+ top:68px;
 }
 .main{
     background: #101010;
@@ -752,6 +756,9 @@
     height: 65px;
     padding: 29px 27px;
 }  
+.match a{
+    font-family: "ArticaPro-Bold";
+}
 .predmet-thing{
     padding-top: 17px;
 }
@@ -935,6 +942,17 @@
 .number-text{
     color: #FFFFFF;
     padding-left: 10px;
+}
+.default .footer-container-button{
+    background: #DCAD55;
+    border: 3px solid #FFFFFF;
+    box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.1);
+}
+.mobile-media .footer-container-button button{
+    margin-bottom: 10px;
+    width: 268px;
+    background: #DCAD55;
+    box-shadow: 0px 6px 22px rgb(255 255 255 / 36%);
 }
 .adapt .footer-container-button{
    padding-bottom: 40px; 
